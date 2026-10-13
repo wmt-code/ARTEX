@@ -19,6 +19,7 @@ web/next-env.d.ts
 # development tools
 .playwright-mcp/
 .playwright-cli/
+graphify-out/
 .idea/
 .vscode/
 *.swp

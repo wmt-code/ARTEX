@@ -1,4 +1,6 @@
 .git
+.env
+graphify-out
 **/node_modules
 web/.next
 web/out

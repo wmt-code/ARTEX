@@ -15,7 +15,12 @@ services:
     restart: unless-stopped
 
   artex:
-    image: autumn27/artex:${ARTEX_TAG:-latest}
+    image: artex:local
+    pull_policy: never
+    build:
+      context: .
+      args:
+        BINARY_SOURCE: source
     depends_on:
       postgres:
         condition: service_healthy
